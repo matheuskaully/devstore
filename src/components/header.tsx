@@ -10,14 +10,17 @@ export default function Header() {
           href={'/'}
           className="relative text-2xl font-extrabold text-white"
         >
-          <span className="font-light text-violet-500">dev</span>
+          <span className="font-light text-violet-500">
+            <span className="font-normal">&lt;</span>
+            dev
+          </span>
           <span>
-            stor<span className="text-violet-500">e</span>
+            store <span className="font-normal">/&gt;</span>
           </span>
         </Link>
 
-        <form className="group flex w-[320px] items-center gap-3 rounded-full bg-zinc-900 px-5 py-3 ring-zinc-700">
-          <Search className="size-5 text-zinc-500 group-focus-within:text-violet-500" />
+        <form className="group flex w-[320px] items-center gap-3 rounded-full bg-zinc-900 px-5 py-3 ring-zinc-700 focus-within:ring-1 focus-within:ring-violet-500">
+          <Search className="size-5 text-violet-500" />
 
           <input
             type="text"
